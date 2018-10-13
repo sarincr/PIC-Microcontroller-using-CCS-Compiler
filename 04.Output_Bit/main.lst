@@ -1,0 +1,106 @@
+CCS PCM C Compiler, Version 5.081d, 1               13-Oct-18 15:44
+Compiler operating in Evaluation Mode
+To obtain a fully enabled compiler visit www.ccsinfo.com/products
+
+               Filename:   C:\Users\ANGICIA\Desktop\PIC\PIC-Microcontroller-using-CCS-Compiler\04.Output_Bit\main.lst
+
+               ROM used:   56 words (1%)
+                           Largest free fragment is 2048
+               RAM used:   5 (1%) at main() level
+                           6 (2%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   01C
+0003:  NOP
+.................... #include <main.h> 
+.................... #include <16F877A.h> 
+.................... //////////// Standard Header file for the PIC16F877A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F877A 
+....................  
+.................... #list 
+....................  
+.................... #device ADC=10 
+.................... #use delay(crystal=8MHz,restart_wdt) 
+0004:  MOVLW  21
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   01B
+000A:  MOVLW  02
+000B:  MOVWF  78
+000C:  MOVLW  BF
+000D:  MOVWF  77
+000E:  CLRWDT
+000F:  DECFSZ 77,F
+0010:  GOTO   00E
+0011:  DECFSZ 78,F
+0012:  GOTO   00C
+0013:  MOVLW  96
+0014:  MOVWF  77
+0015:  DECFSZ 77,F
+0016:  GOTO   015
+0017:  GOTO   018
+0018:  CLRWDT
+0019:  DECFSZ 00,F
+001A:  GOTO   00A
+001B:  RETURN
+....................  
+....................  
+....................  
+.................... void main() 
+001C:  MOVF   03,W
+001D:  ANDLW  1F
+001E:  MOVWF  03
+001F:  BSF    03.5
+0020:  BSF    1F.0
+0021:  BSF    1F.1
+0022:  BSF    1F.2
+0023:  BCF    1F.3
+0024:  MOVLW  07
+0025:  MOVWF  1C
+0026:  BCF    03.7
+.................... { 
+....................  
+....................    while(TRUE) 
+....................    { 
+....................    output_bit(PIN_B0, 1); //  Set PORT B Pin 0 to HIGH 
+0027:  BCF    03.5
+0028:  BSF    06.0
+0029:  BSF    03.5
+002A:  BCF    06.0
+....................    delay_ms(100); 
+002B:  MOVLW  64
+002C:  BCF    03.5
+002D:  MOVWF  21
+002E:  CALL   004
+....................    output_bit(PIN_B0, 0);  //  Set PORT B Pin 0 to LOW 
+002F:  BCF    06.0
+0030:  BSF    03.5
+0031:  BCF    06.0
+....................    delay_ms(100); 
+0032:  MOVLW  64
+0033:  BCF    03.5
+0034:  MOVWF  21
+0035:  CALL   004
+0036:  GOTO   028
+....................    } 
+....................  
+.................... } 
+0037:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

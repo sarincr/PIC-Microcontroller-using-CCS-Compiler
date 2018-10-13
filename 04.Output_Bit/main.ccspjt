@@ -1,0 +1,43 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081d
+Compiler=PCM
+CCSVersion=5.081d
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[C:\Users\ANGICIA\Desktop\PIC\PIC-Microcontroller-using-CCS-Compiler\04.Output_Bit\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=13-10-2018
+D1_L=4
+D1_L1=[56491]Project Opened.
+D1_L2=[56548]Started Editing.
+D1_L3=[56688]Stopped Editing.
+TotalEdit=3
+TotalDebug=0
+D1_E=3
+D1_D=0
+D1_L4=[56688]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=2
+[Units]
+Count=1
+1=main (main)
