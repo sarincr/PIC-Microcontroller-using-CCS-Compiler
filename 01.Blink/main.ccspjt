@@ -1,0 +1,37 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081d
+Compiler=PCM
+CCSVersion=5.081d
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[C:\Users\ANGICIA\Desktop\PIC\CCS\01Blink\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=13-10-2018
+D1_L=2
+D1_L1=[34675]Project Opened.
+D1_L2=[34724]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=1
+[main.c]
+Type=4
+[Units]
+Count=1
+1=main (main)
+
+[defines]
+buildcount=1
