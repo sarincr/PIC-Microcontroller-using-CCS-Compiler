@@ -1,0 +1,15 @@
+#include <main.h>
+#use delay (clock=8000000)
+void main()
+{
+
+   while(TRUE)
+   {
+   PB=0X01;  // PORTB Pin 0 to High
+   delay_ms(1000);  // Delay of 1s.
+   PB=0X00;  // PORTB Pin 0 to High
+   delay_ms(1000);  // Delay of 1s
+   }
+
+}
+

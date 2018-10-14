@@ -1,0 +1,17 @@
+#include <main.h>
+
+void main()
+{
+
+   while(TRUE)
+   {
+   int a=0b00000001; 
+   output_high(a) //  Set PORT B Pin 0 to HIGH 
+   delay_ms(2000);
+   a<<1;
+   delay_ms(100);
+   output_bit(0<<PIN_B, 0);  //  Set PORT B Pin 0 to LOW
+   delay_ms(100);
+   }
+
+}
